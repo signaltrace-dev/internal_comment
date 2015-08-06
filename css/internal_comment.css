@@ -1,0 +1,7 @@
+.comment.internal-comment .comment-text {
+    background: #FFFFD8;
+}
+
+.comment.internal-comment .comment-arrow {
+    background: url(../img/comment-arrow-yellow.gif) no-repeat 0 center transparent;
+}

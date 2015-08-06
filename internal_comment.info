@@ -1,0 +1,8 @@
+name = Internal comment
+description = Hide a comment from users without permission to see it, if it is internal.
+dependencies[] = comment
+dependencies[] = field
+core = 7.x
+version = "7.x-1.x-dev"
+project = Website Worker
+stylesheets[all][] = css/internal_comment.css
