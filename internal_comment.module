@@ -129,3 +129,15 @@ function internal_comment_check_comment_access($user, $comment){
 
   return $has_access;
 }
+
+function internal_comment_comment_presave($comment){
+  if(!empty($comment->field_issue_changes)){
+    $comment->field_internal_comment = array(
+      LANGUAGE_NONE => array(
+        0 => array(
+          'value' => 0,
+        ),
+      ),
+    );
+  }
+}
